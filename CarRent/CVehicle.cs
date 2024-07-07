@@ -1,6 +1,5 @@
 namespace CarRent;
-public class CVehicle
-{
+public class CVehicle {
     private int ID;
     private string Manufacturer;
     private string Model;
@@ -9,8 +8,7 @@ public class CVehicle
     private bool Availability;
     private float RentalCost;
 
-    public CVehicle(int id, string manufacturer, string model, short year, int milage, bool availability, float rentalCost)
-    {
+    public CVehicle(int id, string manufacturer, string model, short year, int milage, bool availability, float rentalCost){
         ID = id;
         Manufacturer = manufacturer;
         Model = model;
@@ -20,8 +18,7 @@ public class CVehicle
         RentalCost = rentalCost;
     }
 
-    public float CalculateRentalCost()
-    {
+    public float CalculateRentalCost(){
         float prize;
         Console.WriteLine("Enter how much days you wanna rent the car");
         int days = Convert.ToInt16(Console.ReadLine());
@@ -30,8 +27,7 @@ public class CVehicle
         return prize;
     }
 
-    public string ToString()
-    {
+    public string ToString(){
         string information;
         information = $"""
                       ID = {ID} 
@@ -43,5 +39,28 @@ public class CVehicle
                       RentalCost = {RentalCost}
                       """;
         return information;
+    }
+    
+    //GETTER
+    public int GetID(){
+        return ID;
+    }
+    public string GetManufacturer(){
+        return Manufacturer;
+    }
+    public string GetModel(){
+        return Model;
+    }
+    public short GetYear(){
+        return Year;
+    }
+    public int GetMileage(){
+        return Mileage;
+    }
+    public bool GetAvailability(){
+        return Availability;
+    }
+    public float GetRentalCost(){
+        return RentalCost;
     }
 }

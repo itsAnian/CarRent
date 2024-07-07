@@ -1,8 +1,7 @@
 ﻿namespace CarRent;
 
-class Program
-{ 
-    static void Main() {
+class Program { 
+    static void Main(){
         int[] IDs = {1, 2, 3, 4, 5};
         string[] Manufacturers = { "Mercedes", "Ford", "VW", "Ferrari", "Kia"};
         string[] Models = { "AMG", "Fusion", "Golf", "911", "Carnival" };
@@ -13,13 +12,11 @@ class Program
 
         CVehicle[] cars = new CVehicle[5];
         
-        for (int i = 0; i < IDs.Length; i++)
-        {
+        for (int i = 0; i < IDs.Length; i++){
             cars[i] = new CVehicle(IDs[i], Manufacturers[i], Models[i], Years[i], Milages[i], Availability[i], RentalCost[i]);
         }
-
-        foreach (var car in cars)
-        {
+            
+        foreach (var car in cars){
             Console.WriteLine(car.ToString());
         }
         
