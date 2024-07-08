@@ -19,6 +19,6 @@ public class TestRentalCost {
         var stringReader = new StringReader(RentalDays.ToString());
         Console.SetIn(stringReader);
         
-        Assert.AreEqual(RentalCost*RentalDays, vehicle.CalculateRentalCost());
+        Assert.That(vehicle.CalculateRentalCost(), Is.EqualTo(RentalCost * RentalDays));
     }
 }

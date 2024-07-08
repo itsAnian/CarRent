@@ -15,12 +15,12 @@ public class TestConstructor {
         
         CVehicle vehicle = new CVehicle(expectedID, expectedManufacturer, expectedModel, expectedYear, expectedMileage, expectedAvailability, expectedRentalCost);
 
-        Assert.AreEqual(expectedID, vehicle.GetID());
-        Assert.AreEqual(expectedManufacturer, vehicle.GetManufacturer());
-        Assert.AreEqual(expectedModel, vehicle.GetModel());
-        Assert.AreEqual(expectedYear, vehicle.GetYear());
-        Assert.AreEqual(expectedMileage, vehicle.GetMileage());
-        Assert.AreEqual(expectedAvailability, vehicle.GetAvailability());
-        Assert.AreEqual(expectedRentalCost, vehicle.GetRentalCost());
+        Assert.That(vehicle.GetID(), Is.EqualTo(expectedID));
+        Assert.That(vehicle.GetManufacturer(), Is.EqualTo(expectedManufacturer));
+        Assert.That(vehicle.GetModel(), Is.EqualTo(expectedModel));
+        Assert.That(vehicle.GetYear(), Is.EqualTo(expectedYear));
+        Assert.That(vehicle.GetMileage(), Is.EqualTo(expectedMileage));
+        Assert.That(vehicle.GetAvailability(), Is.EqualTo(expectedAvailability));
+        Assert.That(vehicle.GetRentalCost(), Is.EqualTo(expectedRentalCost));
     }
 }
