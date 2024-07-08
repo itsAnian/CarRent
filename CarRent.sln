@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent", "CarRent\CarRent.csproj", "{7F25A29E-35A0-4D52-AE37-0AB845AEBEDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{3C78363B-F9F1-4341-A588-E28B3F28838B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F25A29E-35A0-4D52-AE37-0AB845AEBEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F25A29E-35A0-4D52-AE37-0AB845AEBEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F25A29E-35A0-4D52-AE37-0AB845AEBEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F25A29E-35A0-4D52-AE37-0AB845AEBEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C78363B-F9F1-4341-A588-E28B3F28838B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C78363B-F9F1-4341-A588-E28B3F28838B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C78363B-F9F1-4341-A588-E28B3F28838B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C78363B-F9F1-4341-A588-E28B3F28838B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
