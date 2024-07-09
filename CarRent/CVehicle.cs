@@ -8,12 +8,12 @@ public class CVehicle {
     private bool Availability;
     private float RentalCost;
 
-    public CVehicle(int id, string manufacturer, string model, short year, int milage, bool availability, float rentalCost){
+    public CVehicle(int id, string manufacturer, string model, short year, int mileage, bool availability, float rentalCost){
         ID = id;
         Manufacturer = manufacturer;
         Model = model;
         Year = year;
-        Mileage = milage;
+        Mileage = mileage;
         Availability = availability;
         RentalCost = rentalCost;
     }
@@ -21,7 +21,7 @@ public class CVehicle {
     public float CalculateRentalCost(){
         float prize;
         Console.WriteLine("Enter how much days you wanna rent the car");
-        int days = Convert.ToInt16(Console.ReadLine());
+        int days = Convert.ToInt32(Console.ReadLine());
         prize = RentalCost * days;
         Console.WriteLine("You have to pay: " + prize + "€");
         return prize;
