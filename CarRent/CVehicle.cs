@@ -1,66 +1,66 @@
 namespace CarRent;
 public class CVehicle {
-    private int ID;
-    private string Manufacturer;
-    private string Model;
-    private short Year;
-    private int Mileage;
-    private bool Availability;
-    private float RentalCost;
+    private int id;
+    private string manufacturer;
+    private string model;
+    private short year;
+    private int mileage;
+    private bool availability;
+    private float rentalCost;
 
-    public CVehicle(int id, string manufacturer, string model, short year, int mileage, bool availability, float rentalCost){
-        ID = id;
-        Manufacturer = manufacturer;
-        Model = model;
-        Year = year;
-        Mileage = mileage;
-        Availability = availability;
-        RentalCost = rentalCost;
+    public CVehicle(int s_id, string s_manufacturer, string s_model, short s_year, int s_mileage, bool s_availability, float s_rentalCost) {
+        id = s_id;
+        manufacturer = s_manufacturer;
+        model = s_model;
+        year = s_year;
+        mileage = s_mileage;
+        availability = s_availability;
+        rentalCost = s_rentalCost;
     }
 
-    public float CalculateRentalCost(){
+    public float CalculateRentalCost() {
         float prize;
         Console.WriteLine("Enter how much days you wanna rent the car");
         int days = Convert.ToInt32(Console.ReadLine());
-        prize = RentalCost * days;
+        prize = rentalCost * days;
         Console.WriteLine("You have to pay: " + prize + "€");
         return prize;
     }
 
-    public string ToString(){
+    public string ToString() {
         string information;
         information = $"""
-                      ID = {ID} 
-                      Manufacturer = {Manufacturer}
-                      Model = {Model}
-                      Year = {Year}
-                      Mileage = {Mileage}
-                      Availability = {Availability} 
-                      RentalCost = {RentalCost}
+                      ID = {id} 
+                      Manufacturer = {manufacturer}
+                      Model = {model}
+                      Year = {year}
+                      Mileage = {mileage}
+                      Availability = {availability} 
+                      RentalCost = {rentalCost}
                       """;
         return information;
     }
     
     //GETTER
-    public int GetID(){
-        return ID;
+    public int ID {
+        get { return id; }
     }
-    public string GetManufacturer(){
-        return Manufacturer;
+    public string Manufacturer {
+        get { return manufacturer; }
     }
-    public string GetModel(){
-        return Model;
+    public string Model {
+        get { return model; }
     }
-    public short GetYear(){
-        return Year;
+    public short Year {
+        get { return year; }
     }
-    public int GetMileage(){
-        return Mileage;
+    public int Mileage {
+        get { return mileage; }
     }
-    public bool GetAvailability(){
-        return Availability;
+    public bool Availability {
+        get { return availability; }
     }
-    public float GetRentalCost(){
-        return RentalCost;
+    public float RentalCost {
+        get { return rentalCost; }
     }
 }
